@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gymFragment"
+        android:title="gym"
+        android:icon="@drawable/ic_gym"/>
+
+    <item
+        android:id="@+id/caloriesFragment"
+        android:icon="@drawable/ic_calories"
+        android:title="calories"/>
+
+    <item
+        android:id="@+id/recipesFragment2"
+        android:icon="@drawable/ic_recipes"
+        android:title="Recipes"/>
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"/>
+</menu>

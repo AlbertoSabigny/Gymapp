@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/caloriesFragment">
+
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.mis.gymapp.ui.calories.CaloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories" />
+    <fragment
+        android:id="@+id/gymFragment"
+        android:name="com.mis.gymapp.ui.gym.GymFragment"
+        android:label="fragment_gym"
+        tools:layout="@layout/fragment_gym" >
+        <action
+            android:id="@+id/action_gymFragment_to_gymDetailActivity"
+            app:destination="@id/gymDetailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.mis.gymapp.ui.settings.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <activity
+        android:id="@+id/gymDetailActivity"
+        android:name="com.mis.gymapp.ui.detail.GymDetailActivity"
+        android:label="activity_gym_detail"
+        tools:layout="@layout/activity_gym_detail" >
+        <argument android:name="type"
+            app:argType="string"/>
+    </activity>
+    <fragment
+        android:id="@+id/recipesFragment2"
+        android:name="com.mis.gymapp.ui.recipes.RecipesFragment"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes" />
+</navigation>
